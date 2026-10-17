@@ -1,6 +1,15 @@
-# Leonard Lumati Opasanjo
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img src="assets/banner-light.svg" width="100%" alt="Leonard Lumati Opasanjo, cybersecurity specialist. Mombasa, Kenya. CCNA. ISO/IEC 27701 Lead Auditor. A network map where a scan travels from the internet through the firewall and core switch, and each host locks as it is secured.">
+</picture>
 
-Cybersecurity specialist in Mombasa, Kenya. I build and secure systems: hardening networks and servers, writing business software with security designed in, and responding when an attack gets through. I hold a BSc in Information Security and Forensics from KCA University and a Cisco CCNA.
+<p>
+  <a href="https://www.linkedin.com/in/leonard-lumati"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/linkedin-dark.svg"><img src="assets/linkedin-light.svg" height="40" alt="LinkedIn"></picture></a>&nbsp;
+  <a href="mailto:leonardlumati99@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/email-dark.svg"><img src="assets/email-light.svg" height="40" alt="Email leonardlumati99@gmail.com"></picture></a>&nbsp;
+  <a href="https://www.opassecure.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/website-dark.svg"><img src="assets/website-light.svg" height="40" alt="opassecure.com"></picture></a>
+</p>
+
+I build and secure systems: hardening networks and servers, writing business software with security designed in, and responding when an attack gets through. I hold a BSc in Information Security and Forensics from KCA University and a Cisco CCNA.
 
 ## Now
 
@@ -27,19 +36,21 @@ I build business systems for Kenyan organizations: ERP and SACCO lending platfor
 
 That code is in private repositories.
 
-## Tools
+## Toolkit
 
-Nessus, Nmap, Burp Suite, Metasploit, Wireshark, Splunk · Kali Linux · Cisco IOS, GNS3 · Windows Server, Active Directory, VMware ESXi · Docker · Python, PowerShell, Bash, SQL
+| Area | Tools |
+| --- | --- |
+| Assessment | Nmap, Nessus, Burp Suite, Metasploit |
+| Monitoring and forensics | Wireshark, Splunk |
+| Networks | Cisco IOS, GNS3 |
+| Systems | Kali Linux, Windows Server, Active Directory, VMware ESXi, Docker |
+| Scripting | Python, PowerShell, Bash, SQL |
 
 ## Certifications
 
-- Cisco Certified Network Associate (CCNA), valid to December 2026
-- ISO/IEC 27701:2025 Lead Auditor, Mastermind Assurance, 2026
-- Cybersecurity (SWARA course), AfricaHackon Academy, 2026
-- Deep Web and Cybersecurity, EC-Council, 2023
-
-## Contact
-
-- Email: [leonardlumati99@gmail.com](mailto:leonardlumati99@gmail.com)
-- LinkedIn: [leonard-lumati](https://www.linkedin.com/in/leonard-lumati)
-- Website: [opassecure.com](https://www.opassecure.com)
+| Certification | Issuer | Year |
+| --- | --- | --- |
+| Cisco Certified Network Associate (CCNA) | Cisco | 2023, valid to December 2026 |
+| ISO/IEC 27701:2025 Lead Auditor | Mastermind Assurance | 2026 |
+| Cybersecurity (SWARA course) | AfricaHackon Academy | 2026 |
+| Deep Web and Cybersecurity | EC-Council | 2023 |
