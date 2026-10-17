@@ -255,6 +255,29 @@ def pill(key, icon, label, theme):
     svg.save(f"{key}-{theme}.svg")
 
 
+def avatar():
+    """Profile picture: L plus a locked node for the O. GitHub crops it to a circle."""
+    t, size, cx, cy = THEMES["dark"], 800, 400, 400
+    svg = Svg(size, size, "LO monogram")
+    svg.add(f'<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{t["bg"]}"/>'
+            f'<stop offset="1" stop-color="{t["bg2"]}"/></linearGradient>'
+            f'<pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">'
+            f'<circle cx="16" cy="16" r="1.6" fill="{t["dot"]}"/></pattern></defs>'
+            f'<rect width="{size}" height="{size}" fill="url(#bg)"/><rect width="{size}" height="{size}" fill="url(#dots)"/>')
+    ring_x, ring_r = 498, 118
+    for nx, ny, lit in ((632, 198, False), (642, 610, True), (205, 642, False)):
+        svg.add(f'<line x1="{ring_x}" y1="{cy}" x2="{nx}" y2="{ny}" stroke="{t["link"]}" stroke-width="5"/>'
+                f'<circle cx="{nx}" cy="{ny}" r="14" fill="{t["accent"] if lit else t["bg"]}" '
+                f'stroke="{t["accent"] if lit else t["node"]}" stroke-width="5"/>')
+    font, fs = SANS[600], 380
+    cap = 0.698 * fs
+    svg.text(ring_x - ring_r - 26 - font.width("L", fs), cy + cap / 2, "L", font, fs, t["text"])
+    svg.add(f'<circle cx="{ring_x}" cy="{cy}" r="{ring_r}" fill="{t["bg"]}" stroke="{t["accent"]}" stroke-width="34"/>'
+            f'<g transform="translate({ring_x - 55} {cy - 57}) scale(4.6)" fill="none" stroke="{t["accent"]}" '
+            f'stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{ICONS["lock"]}</g>')
+    svg.save("avatar.svg")
+
+
 if __name__ == "__main__":
     for theme, t in THEMES.items():
         for fg in ("text", "muted", "label", "accent"):
@@ -264,4 +287,5 @@ if __name__ == "__main__":
         pill("linkedin", "linkedin", "LinkedIn", theme)
         pill("email", "mail", "Email", theme)
         pill("website", "globe", "opassecure.com", theme)
+    avatar()
     print("built:", ", ".join(sorted(p.name for p in ASSETS.glob("*.svg"))))
