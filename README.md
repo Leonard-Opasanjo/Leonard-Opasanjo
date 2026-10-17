@@ -50,7 +50,7 @@ That code is in private repositories.
 
 | Certification | Issuer | Year |
 | --- | --- | --- |
-| Cisco Certified Network Associate (CCNA) | Cisco | 2023, valid to December 2026 |
+| Cisco Certified Network Associate (CCNA), valid to December 2026 | Cisco | 2023 |
 | ISO/IEC 27701:2025 Lead Auditor | Mastermind Assurance | 2026 |
 | Cybersecurity (SWARA course) | AfricaHackon Academy | 2026 |
 | Deep Web and Cybersecurity | EC-Council | 2023 |
